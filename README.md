@@ -30,3 +30,6 @@ Sound effects
 ## Polyfills
 [Array.from](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Polyfill "Array.from")
 [Array.find](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find#Polyfill "Array.find")
+
+## References
+https://davidwalsh.name/css-flip for help on card flip.
