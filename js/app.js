@@ -575,7 +575,10 @@ const Model = {
         clearInterval(this.gameInfo.gameTimer);
     },
     checkSavedGame: function () {
-        if ((localStorage.getItem("memory-game-save") !== undefined || localStorage.getItem("memory-game-save") !== null) && (this.getMatchedCards(JSON.parse(localStorage.getItem("memory-game-save")).cards).length > 0)) {
+        if(localStorage.getItem("memory-game-save") === undefined || localStorage.getItem("memory-game-save") === null){
+            return false;
+        }
+        if (this.getMatchedCards(JSON.parse(localStorage.getItem("memory-game-save")).cards).length > 0) {
             return true;
         }
         return false;
