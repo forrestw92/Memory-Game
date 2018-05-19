@@ -578,6 +578,7 @@ const Model = {
         if(localStorage.getItem("memory-game-save") === undefined || localStorage.getItem("memory-game-save") === null){
             return false;
         }
+        adsf
         if (this.getMatchedCards(JSON.parse(localStorage.getItem("memory-game-save")).cards).length > 0) {
             return true;
         }
